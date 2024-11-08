@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Set overall background to black */
+    color: #fff;
+}
+
+section {
+    padding: 40px;
+    margin-bottom: 20px;
+    background-color: #000; /* Ensure section background is black */
+    border: 2px solid transparent; /* Default border is transparent */
+    transition: border 0.3s ease; /* Smooth transition for border change */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Red border on click/focus */
+section:focus-within, section:active {
+    border: 2px solid red;
+}
+
+/* Home Section */
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align content in the center */
+    justify-content: center;
+    background-color: #000; /* Home section background black */
+}
+
+.Home-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.Home-content h1 {
+    font-size: 48px;
+    background: linear-gradient(45deg, #ff6f61, #ffcc00, #66b3ff, #28a745);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    override-colors: transparent;
+    margin-bottom: 20px;
+}
+
+.Home-content h3, .Home-content p {
+    color: #f4f6f2;
+}
+
+.profile-image {
+    max-height: 300px;
+    width: auto;
+    border-radius: 10px;
+    padding: 5px;
+    background: linear-gradient(45deg, #ff6f61, #ffcc00, #66b3ff, #28a745);
+    border: 2px solid transparent;
+    margin: 20px 0;
+}
+
+/* About Section */
+#about {
+    background-color: #000;
+    color: #88fbd3;
+}
+
+.About-content {
+    text-align: start; /* Center align text */
+    padding: 40px;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #000;
+    color: #28a745; /* Text color to green */
+}
+
+.Skills-content {
+    text-align:start; /* Center align text */
+    padding: 40px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #000;
+    color: #337ab7; /* Text color to blue */
+}
+
+.Contact-content {
+    text-align:start; /* Center align text */
+    padding: 40px;
+}
+
+/* Extra Curricular Section */
+#extra {
+    background-color: #000;
+    color: #337ab7; /* Text color to blue */
+}
+
+.Extra-content {
+    text-align:start; /* Center align text */
+    padding: 40px;
+}
+
+/* Footer */
+.Footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.Footer-content {
+    padding: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .Home {
+        flex-direction: column;
+    }
+
+    .profile-image-container {
+        width: 100%;
+        height: 150%;
+        margin-top: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin: 2px 2px;
+
+    
+}
+
+ a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+ a:hover{
+    color: aqua;
+}
